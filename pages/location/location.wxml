@@ -1,0 +1,20 @@
+<!--pages/location/location.wxml-->
+<view class='content'>
+  <view class="page-body-info">
+    <button  class="page-body-buttons" wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" plain='true'>
+      先点我登录哦
+    </button>
+    <block wx:else>
+        <image class=".userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='head'>
+    <text class="userinfo-nickname">当前省份：{{currentProvince}}</text>  
+    <text class="userinfo-nickname">城市：{{currentCity}}</text>
+    
+  </view>
+  <view wx:for="{{university}}" class='university'>
+    <button bindtap="updateLocation" data-id="{{item.Id}}" data-campus="{{item.Name}}">{{item.Name}}</button>
+  </view>
+</view>

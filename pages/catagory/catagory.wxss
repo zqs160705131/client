@@ -1,0 +1,37 @@
+/* pages/catagory/catagory.wxss */
+.container{
+  background-image:url(https://www.test.com/weapp/images/background.jpg);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 150px;
+}
+.single{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid #33cc66;
+  border-right: 1rpx solid #33cc66;
+}
+.single image{
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+}
+.single text{
+  margin: 5px;
+  width: 1em;
+ font-family: '微软雅黑', '微软雅黑';
+  src: 
+    url('https://www.test.com/fonts/MSYaHei.ttf'),
+    url('https://www.test.com/fonts/MSYaHei.ttf');
+  text-align: middle;
+  line-height: 20px;
+  margin-top: 15px;
+}
